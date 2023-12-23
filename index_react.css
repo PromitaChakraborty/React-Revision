@@ -1,10 +1,45 @@
-h1 {
-  color: orange; /* hexadecimal value */
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
 }
 
-h2 {
-  color: blueviolet;
+.logo {
+  width: 100px;
+  height: fit-content;
 }
-h3 {
-  color: red;
+.nav-container > ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-container > ul > li {
+  padding: 1px;
+  margin: 5px;
+}
+
+.rest-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rest-card {
+  margin: 20px;
+  padding: 5px;
+  width: 270px;
+  height: 350px;
+}
+
+.rest-card:hover {
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.search {
+  padding: 10px;
+}
+.rest-logo {
+  padding: 5px;
+  width: 200px;
+  height: 100px;
 }
