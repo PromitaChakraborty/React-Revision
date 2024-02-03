@@ -15,10 +15,31 @@ const Body = () => {
 
   const fetchData = async () => {
     const data = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.7138144&lng=88.50485789999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+      "https://www.swiggy.com/mapi/homepage/getCards?lat=12.9351929&lng=77.62448069999999"
     );
+    console.log(data);
     const json = await data.json();
     console.log(json);
+    setListOfRestaurant(
+      json?.data?.sucess?.cards[4]?.grideWidth?.gridElements?.infoWithStyle
+        ?.restaurants
+    );
+    setListOfRestaurant2(
+      json?.data?.sucess?.cards[4]?.grideWidth?.gridElements?.infoWithStyle
+        ?.restaurants
+    );
+    setListOfRestaurant3(
+      json?.data?.sucess?.cards[4]?.grideWidth?.gridElements?.infoWithStyle
+        ?.restaurants
+    );
+    setListOfRestaurant4(
+      json?.data?.sucess?.cards[4]?.grideWidth?.gridElements?.infoWithStyle
+        ?.restaurants
+    );
+    setListOfRestaurant5(
+      json?.data?.sucess?.cards[4]?.grideWidth?.gridElements?.infoWithStyle
+        ?.restaurants
+    );
   };
   return (
     <div className="body">
