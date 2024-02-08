@@ -102,8 +102,8 @@
 .rest-card {
   margin: 10px;
   padding: 5px;
-  width: 270px;
-  height: 350px;
+  width: 405px;
+  height: 380px;
 }
 
 .rest-card:hover {
@@ -119,4 +119,36 @@
   width: 200px;
   height: 100px;
   border-radius: 50%;
+}
+
+.Shimmer-Container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Shimmer-Cards {
+  margin: 10px;
+  padding: 5px;
+  width: 420px;
+  height: 420px;
+  background-color: #f0f0f0;
+  border: 2px;
+}
+
+.login-btn {
+  margin: 10px;
+  cursor: pointer;
+  background-color: palevioletred;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  padding: 10px 20px;
+  border: black;
+  border-radius: 5px;
+  transition: 0.4;
+}
+
+.login-btn:hover {
+  background-color: darkcyan;
+  color: #fff;
 }
