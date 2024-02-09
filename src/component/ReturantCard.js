@@ -3,12 +3,12 @@ const ReturantCard = (props) => {
   const { restData } = props;
   const {
     cloudinaryImageId,
-    type,
     name,
     avgRating,
+    areaName,
     cuisines,
     costForTwo,
-    deliveryTime,
+    sla,
   } = restData;
   return (
     <div className="rest-card" style={{ backgroundColor: "#f0f0f0" }}>
@@ -20,11 +20,10 @@ const ReturantCard = (props) => {
 
       <h3>{name} </h3>
       <h4>{avgRating} </h4>
-      <h4>{type} </h4>
-
+      <h4>{areaName}</h4>
       <h4>{cuisines.join(",")}</h4>
-      <h4>₹{costForTwo} FOR TWO</h4>
-      <h4>{deliveryTime} minutes</h4>
+      <h4>{costForTwo}</h4>
+      <h4>{sla.slaString} </h4>
     </div>
   );
 };
