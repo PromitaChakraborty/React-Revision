@@ -21,7 +21,11 @@ const ReturantCard = (props) => {
       <h3>{name} </h3>
       <h4>{avgRating} </h4>
       <h4>{areaName}</h4>
+<<<<<<< HEAD
       <h4>{cuisines.join(",")}</h4>
+=======
+      <h4>{cuisines}</h4>
+>>>>>>> 7e51eac42bee9ab41baf762f3fdc9da728c41e49
       <h4>{costForTwo}</h4>
       <h4>{sla.slaString} </h4>
     </div>
