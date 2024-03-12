@@ -1,0 +1,20 @@
+{
+  "folders": [
+	{
+		"path": "../.."
+	},
+	{
+		"path": "../../../Namaste Javascript"
+	},
+	{
+		"path": "C:/Users/Promita/Desktop/C Programimg"
+	},
+	{
+		"path": "../../../React-Project"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Namaste Javascript",
+    "git.ignoreLimitWarning": true
+  }
+}

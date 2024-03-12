@@ -18,12 +18,17 @@ const ReturantCard = (props) => {
         src={CDN_URL + restData.cloudinaryImageId}
       />
 
-      <h3>{name} </h3>
-      <h4>{avgRating} </h4>
-      <h4>{areaName}</h4>
-      <h4>{cuisines.join(",")}</h4>
-      <h4>{costForTwo}</h4>
-      <h4>{sla.slaString} </h4>
+      <h2>{name} </h2>
+      <h5>{cuisines.join(",")}</h5>
+
+      <h3>{areaName}</h3>
+      <span className="span">
+        <h4>{avgRating}</h4>
+
+        <h4>{costForTwo}</h4>
+
+        <h4>{sla.slaString} </h4>
+      </span>
     </div>
   );
 };
