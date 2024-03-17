@@ -33,13 +33,13 @@ const Body = () => {
     console.log(json);
 
     const restData =
-      json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants.map(
+      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants.map(
         (elem) => elem.info
       );
 
     console.log(restData);
     setListOfRestaurant(
-      json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants.map(
+      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants.map(
         (elem) => elem.info
       )
     );
