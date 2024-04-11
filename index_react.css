@@ -403,3 +403,12 @@
 .error-page .error-data {
   padding: 10px 0px;
 }
+
+.Class-Component {
+  width: 500px;
+  border-radius: 5px;
+  box-shadow: -1px 5px 10px 5px rgba(42, 42, 42, 0.2);
+  padding: 10px;
+  margin: 20px;
+  cursor: pointer;
+}
