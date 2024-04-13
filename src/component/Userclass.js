@@ -5,7 +5,7 @@ class Userclass extends React.Component {
     super(props);
     //console.log(props);
 
-    // console.log("Child Constructor");
+    console.log("Child Constructor");
 
     this.state = {
       userInfo: {
@@ -13,9 +13,6 @@ class Userclass extends React.Component {
         login: "Dummy",
 
         bio: "Dummy",
-        // followers: "Dummy",
-        // following: "Dummy",
-        // bio: "Dummy",
       },
     };
   }
@@ -29,11 +26,18 @@ class Userclass extends React.Component {
     });
 
     console.log(json);
-    //console.log("Child ComponentDidMount");
+
+    console.log("Child ComponentDidMount");
+  }
+  componentDidUpdate() {
+    console.log("Child CoponentDidUpdate");
   }
 
+  componentWillUnmount() {
+    console.log(" Child componentWillUnmount");
+  }
   render() {
-    //console.log("Child Render");
+    console.log("Child Render");
     const { name, login, bio } = this.state.userInfo;
 
     return (

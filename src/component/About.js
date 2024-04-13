@@ -10,11 +10,11 @@ class About extends Component {
   }
 
   componentDidMount() {
-    //console.log("Parent ComponentDidMount");
+    // console.log("Parent ComponentDidMount");
   }
 
   render() {
-    // console.log("Parent Render");
+    console.log("Parent Render");
     return (
       <div className="about-container">
         <div className="about-left">
@@ -26,14 +26,14 @@ class About extends Component {
             "Better you will feel if you eat from Food<span>ify</span> healthy
             meal"
           </h4> */}
-          {/* <Userclass
+          <Userclass
             name={"Promita Chakraborty(Class)"}
             location={"Kolkata(class)"}
-          /> */}
-          <Userclass
+          />
+          {/* <Userclass
             name={"Prasun Chakraborty(Class)"}
             location={"Telengana(class)"}
-          />
+          /> */}
         </div>
       </div>
     );

@@ -13,5 +13,5 @@ export const ABOUT_US_URL =
 export const ERROR_URL =
   "https://t3.ftcdn.net/jpg/05/59/55/28/360_F_559552850_Qca6ZAulEZk0Lm7TrceTdBI3D2YwRM1b.jpg";
 
-export const MENU_URL =
-  "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9715987&lng=77.5945627&restaurantId=";
+export const MENU_API =
+  "https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=22.805195&lng=88.3652122&restaurantId=";
