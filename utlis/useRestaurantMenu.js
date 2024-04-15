@@ -9,10 +9,15 @@ const useRestaurantMenu = (resId) => {
   }, []);
 
   const fetchData = async () => {
-    const data = await fetch(MENU_API + resId);
+    const data = await fetch(
+      "https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=22.805195&lng=88.3652122&restaurantId=" +
+        resId
+    );
     const json = await data.json();
-    console.log(json);
+    console.log("restmenu-json", json);
+
     setRestInfo(json.data);
+    console.log("restinfo_usemenu", restInfo);
   };
   return restInfo;
 };

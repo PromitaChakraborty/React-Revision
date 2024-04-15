@@ -5,7 +5,9 @@ const Useroffline = () => {
     <div>
       <h1>🔴 Offline!</h1>
 
-      <p>Sorry, it seems that you are currently offline.</p>
+      <p className="text-center text-2xl font-bold text-oranger-400">
+        Sorry, it seems that you are currently offline.
+      </p>
     </div>
   );
 };

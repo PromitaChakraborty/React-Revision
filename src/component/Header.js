@@ -8,30 +8,32 @@ const Header = () => {
 
   console.log("abc", isOnline);
   return (
-    <div className="header">
-      <div className="logo-container">
-        <img className="logo" alt="Website-Image" src={LOGO_URL} />
+    <div className="flex justify-between py-4  bg-slate-400 ">
+      <div className="logo text-2xl font-bold shadow-lg">
+        <img className="w-24" alt="Website-Image" src={LOGO_URL} />
       </div>
 
-      <div className="nav-container">
-        <ul>
-          <li>Online Status:{isOnline ? " Online:✅" : " Offline:🔴"}</li>
+      <div className="flex items-center  ">
+        <ul className="flex p-4 m-4">
+          <li className="px-4 font-serif font-bold ">
+            Online Status:{isOnline ? " Online:✅" : " Offline:🔴"}
+          </li>
 
-          <li>
+          <li className="px-2 font-bold hover:text-blue-500 transition duration-300 ">
             <Link to="/">HOME </Link>
           </li>
-          <li>
+          <li className="px-2 font-bold hover:text-blue-500 transition duration-300">
             <Link to="/about">ABOUT US</Link>
           </li>
-          <li>
+          <li className="px-2 font-bold hover:text-blue-500 transition duration-300">
             <Link to="/contact">CONTACT US </Link>
           </li>
-          <li>
-            <Link to="/grocery">Grocery </Link>
+          <li className="px-2 font-bold hover:text-blue-500 transition duration-300">
+            <Link to="/grocery">GROCERY </Link>
           </li>
 
           <button
-            className="login-btn"
+            className="bg-blue-500 hover:bg-blue-700 font-bold py-3 px-4 rounded-full transition duration-300 "
             onClick={() => {
               btnlogin === "Login"
                 ? setbtnlogin("Logout")
