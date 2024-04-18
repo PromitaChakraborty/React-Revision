@@ -28,7 +28,7 @@ const Body = () => {
 
     const json = await data.json();
 
-    console.log(json);
+    console.log("json", json);
 
     const restData =
       json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants.map(
